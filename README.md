@@ -1,157 +1,25 @@
-# Note Taking App API Documentation
+# Accredian Notes API
 
-## Authentication Endpoints
+## Create referral Enpoint
 
-### **POST /v1/auth/signin**
+### **POST /v1/referral**
 
 **Endpoint:**
 
 ```
-localhost:8080/v1/auth/signin
+localhost:8080/v1/referral
 ```
 
 **Request Body:**
 
 ```json
 {
-  "email": "hello@gmail.com",
-  "password": "123456"
-}
-```
-
-### **POST /v1/auth/signup**
-
-**Endpoint:**
-
-```
-localhost:8080/v1/auth/signup
-```
-
-**Request Body:**
-
-```json
-{
-  "name": "abc",
-  "email": "abc@gmail.com",
-  "password": "123456"
-}
-```
-
----
-
-## Notes Endpoints
-
-### **GET /v1/notes**
-
-**Endpoint:**
-
-```
-localhost:8080/v1/notes
-```
-
-**Authorization:**
-
-- Bearer Token
-
----
-
-### **GET /v1/notes/:id**
-
-**Endpoint:**
-
-```
-localhost:8080/v1/notes/:id
-```
-
-**Authorization:**
-
-- Bearer Token
-
-**Path Variables:**
-
-```json
-{
-  "id": "67962474e457b1e28fc60304"
-}
-```
-
----
-
-### **PUT /v1/notes/:id**
-
-**Endpoint:**
-
-```
-localhost:8080/v1/notes/:id
-```
-
-**Authorization:**
-
-- Bearer Token
-
-**Path Variables:**
-
-```json
-{
-  "id": "67962474e457b1e28fc60304"
-}
-```
-
-**Request Body:**
-
-```json
-{
-  "title": "abc4321",
-  "content": "def123"
-}
-```
-
----
-
-### **DELETE /v1/notes/:id**
-
-**Endpoint:**
-
-```
-localhost:8080/v1/notes/:id
-```
-
-**Authorization:**
-
-- Bearer Token
-
-**Path Variables:**
-
-```json
-{
-  "id": "67962474e457b1e28fc60304"
-}
-```
-
----
-
-### **POST /v1/notes**
-
-**Endpoint:**
-
-```
-localhost:8080/v1/notes
-```
-
-**Authorization:**
-
-- Bearer Token
-
-**Request Body:**
-
-```json
-{
-  "title": "abc",
-  "content": "abc123",
-  "isAudio": true,
-  "audioDuration": 10,
-  "isNew": true,
-  "isFavorite": true,
-  "images": ["abc.jpg"]
+  "referrerName": "abc",
+  "referrerEmail": "temp@mail.com",
+  "referrerPhone": "51515155155",
+  "refereeName": "jk",
+  "refereeEmail": "temp@mail.com",
+  "refereePhone": "5555555555",
+  "course": "data-science"
 }
 ```
