@@ -1,4 +1,4 @@
-# Accredian Notes API
+# Accredian Referral API
 
 ## Create referral Enpoint
 
